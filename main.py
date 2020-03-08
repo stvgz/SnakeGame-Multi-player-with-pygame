@@ -6,7 +6,6 @@ pygame.init()
 ############## basic settings ############
 # Size
 WINDOWWIDTH = 1200
-WINDOWWIDTH=1000
 WINDOWHEIGHT = 800
 WINDOW_WIDTH_MID = WINDOWWIDTH/2
 WINDOW_HEIGHT_MID = WINDOWHEIGHT/2
