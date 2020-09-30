@@ -1,7 +1,16 @@
-import pygame,sys,random
+import sys
+import random
+import os
+
+import pygame
 from pygame.locals import *
 
+# ENVS
 pygame.init()
+
+current_path=os.getcwd()
+
+
 ###
 ############## basic settings ############
 # Size
@@ -61,13 +70,15 @@ ScoreFont=pygame.font.SysFont('arial',50)
 DeadFont=pygame.font.SysFont('comic sans MS',25)
 
 # Icons
-ICON_P1_Head = pygame.image.load('images\\ICON_P1_Head.jpg')
-ICON_P1_Body = pygame.image.load('images\\Blue_20x20.bmp')
-ICON_P2_Head = pygame.image.load('images\\ICON_P2_Head.png')
-ICON_P2_Body = pygame.image.load('images\\Red_20x20.bmp')
-ICON_P3_Head = pygame.image.load('images\\ICON_P3_Head.png')
-ICON_P3_Body = pygame.image.load('images\\Green_20x20.bmp')
-HELP = pygame.image.load('images\\Help.bmp')
+ICON_P1_Head = pygame.image.load('/Users/zhigao/Downloads/SnakeGame_Multi-master/images/ICON_P1_Head.jpg')
+
+ICON_P1_Head = pygame.image.load(os.path.join(current_path,'images/ICON_P1_Head.jpg'))
+ICON_P1_Body = pygame.image.load(os.path.join(current_path,'images/Blue_20x20.bmp'))
+ICON_P2_Head = pygame.image.load(os.path.join(current_path,'images/ICON_P2_Head.png'))
+ICON_P2_Body = pygame.image.load(os.path.join(current_path,'images/Red_20x20.bmp'))
+ICON_P3_Head = pygame.image.load(os.path.join(current_path,'images/ICON_P3_Head.png'))
+ICON_P3_Body = pygame.image.load(os.path.join(current_path,'images/Green_20x20.bmp'))
+HELP = pygame.image.load(os.path.join(current_path,'images/Help.bmp'))
 
 ############## basic game settings ############3
 Playerlist=[]
