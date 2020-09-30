@@ -1,8 +1,16 @@
-# SnakeGame_Multi
+# Introduction A Multi-Player SnakeGame with
 
-A snake game with python for 3 plays
-Flexible 
+## How to play
+* Clone this project
+* Run main.py
+* Press ESC or space for help
+## require
+pygame==1.9.6
 
-##1st add food
-~~~~~~~~
+## Modification？
+
+* Change ICON_P1_head.jpg to change the snake head of player one
+
+# 介绍 多人贪吃蛇游戏
+
 
